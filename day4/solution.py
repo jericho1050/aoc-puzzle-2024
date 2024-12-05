@@ -6,7 +6,5 @@ with open("day4.txt", "r") as file:
     arr_characters = [list(line.ljust(max_length)) for line in lines]
 
 xmas_count = 0
-xmas_count += horizontal_search(arr_characters)
-xmas_count += vertical_search(arr_characters)
-xmas_count += diagonal_search(arr_characters)
+xmas_count = x_max_search(arr_characters)
 print(xmas_count)
